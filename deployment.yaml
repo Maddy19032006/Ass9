@@ -21,7 +21,7 @@ spec:
     spec:
       containers:
       - name: portal-container
-        image: <your-dockerhub-username>/university-portal:v1
+        image: theatomicxm/university-portal:v1
         imagePullPolicy: Always
         ports:
         - containerPort: 80
