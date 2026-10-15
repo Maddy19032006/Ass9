@@ -1,14 +1,14 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: university-portal-deployment
+  name: hospital-portal-deployment
   labels:
-    app: university-portal
+    app: hospital-portal
 spec:
-  replicas: 2
+  replicas: 3
   selector:
     matchLabels:
-      app: university-portal
+      app: hospital-portal
   strategy:
     type: RollingUpdate
     rollingUpdate:
@@ -17,11 +17,11 @@ spec:
   template:
     metadata:
       labels:
-        app: university-portal
+        app: hospital-portal
     spec:
       containers:
-      - name: portal-container
-        image: theatomicxm/university-portal:v1
+      - name: hospital-container
+        image: theatomicxm/hospital-portal:latest
         imagePullPolicy: Always
         ports:
         - containerPort: 80
@@ -42,13 +42,13 @@ spec:
 apiVersion: v1
 kind: Service
 metadata:
-  name: university-portal-service
+  name: hospital-portal-service
 spec:
   type: NodePort
   selector:
-    app: university-portal
+    app: hospital-portal
   ports:
   - protocol: TCP
     port: 80
     targetPort: 80
-    nodePort: 30080
+    nodePort: 30083
