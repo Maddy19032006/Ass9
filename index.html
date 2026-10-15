@@ -2,62 +2,53 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>University Learning Management Portal</title>
+    <title>SpiceRoute - Online Food Ordering Portal</title>
     <style>
-        body { font-family: Arial, sans-serif; margin: 0; background: #f4f6f9; color: #333; }
-        header { background: #1a365d; color: #fff; padding: 20px; text-align: center; }
+        body { font-family: Arial, sans-serif; margin: 0; background: #fffaf0; color: #2d3748; }
+        header { background: #c53030; color: #fff; padding: 20px; text-align: center; }
+        .promo { background: #fefcbf; color: #744210; text-align: center; padding: 10px; font-weight: bold; border-bottom: 1px solid #f6e05e; }
         .container { max-width: 1000px; margin: 20px auto; padding: 0 15px; display: grid; grid-template-columns: 1fr 1fr; gap: 15px; }
-        .card { background: #fff; padding: 15px; border-radius: 8px; box-shadow: 0 2px 5px rgba(0,0,0,0.1); }
-        h2 { color: #1a365d; margin-top: 0; border-bottom: 2px solid #e2e8f0; padding-bottom: 8px; font-size: 18px; }
-        ul { padding-left: 18px; margin: 0; }
-        li { margin-bottom: 6px; }
-        .badge { background: #2b6cb0; color: #fff; padding: 3px 8px; border-radius: 4px; font-size: 12px; }
+        .card { background: #fff; padding: 15px; border-radius: 8px; box-shadow: 0 2px 5px rgba(0,0,0,0.08); }
+        h2 { color: #c53030; margin-top: 0; border-bottom: 2px solid #fed7d7; padding-bottom: 8px; font-size: 18px; }
+        table { width: 100%; border-collapse: collapse; }
+        th, td { text-align: left; padding: 8px; border-bottom: 1px solid #edf2f7; }
+        .in-stock { color: #2f855a; font-weight: bold; }
+        .out-stock { color: #c53030; font-weight: bold; }
     </style>
 </head>
 <body>
     <header>
-        <h1>University Learning Management Portal</h1>
-        <p>Release Version: <span class="badge">v1.0 - Stable Release</span></p>
+        <h1>SpiceRoute Online Food Ordering Portal</h1>
+        <p>Authentic Multi-Cuisine Delivery | Open Daily: 9:00 AM – 11:30 PM | Rating: 4.8/5</p>
     </header>
+    <div class="promo">
+        PROMOTIONAL OFFER: Use Code <strong>DEVOPS50</strong> for Flat 50% OFF up to ₹150 + Free Delivery!
+    </div>
     <div class="container">
         <div class="card">
-            <h2>Course Information</h2>
+            <h2>Food Categories</h2>
             <ul>
-                <li><strong>ISWE406P:</strong> Agile Development Process & DevOps (4 Credits)</li>
-                <li><strong>ISWE302L:</strong> Software Architecture & Design (3 Credits)</li>
-                <li><strong>ICSE204L:</strong> Cloud Computing & Microservices (4 Credits)</li>
+                <li>South Indian Classics & Dosas</li>
+                <li>North Indian Tandoor & Biryanis</li>
+                <li>Wood-Fired Artisan Pizzas</li>
+                <li>Desserts & Cold Beverages</li>
             </ul>
         </div>
         <div class="card">
-            <h2>Faculty Profiles</h2>
-            <ul>
-                <li><strong>Dr. R. Subramanian</strong> – Professor, Dept. of Software Systems</li>
-                <li><strong>Prof. Anitha K.</strong> – Associate Professor, DevOps & Cloud Lab</li>
-                <li><strong>Dr. Vikram Nair</strong> – Assistant Professor, Distributed Computing</li>
-            </ul>
-        </div>
-        <div class="card">
-            <h2>Learning Resources</h2>
-            <ul>
-                <li>Module 1–4 Lecture Slides & CI/CD Lab Manuals (PDF)</li>
-                <li>Docker & Kubernetes Official Cheat Sheets</li>
-                <li>Recorded Lab Sessions & GitHub Starter Repositories</li>
-            </ul>
-        </div>
-        <div class="card">
-            <h2>Assignment Announcements</h2>
-            <ul>
-                <li><strong>Assessment VIII:</strong> CI/CD Pipeline & Automated Rollback – Due Today</li>
-                <li><strong>Project Milestone 2:</strong> Container Orchestration Review – Next Monday</li>
-            </ul>
+            <h2>Restaurant Details</h2>
+            <p><strong>Location:</strong> Katpadi Main Road, Vellore</p>
+            <p><strong>Delivery Time:</strong> 25–30 Mins Live Tracking</p>
+            <p><strong>Hygiene Certification:</strong> FSSAI 5-Star Kitchen</p>
         </div>
         <div class="card" style="grid-column: span 2;">
-            <h2>Examination Schedules</h2>
-            <ul>
-                <li><strong>Continuous Assessment Test (CAT-2):</strong> November 2, 2026 | 10:00 AM – 11:30 AM</li>
-                <li><strong>Lab Final Digital Assessment:</strong> Slot L49+L50</li>
-                <li><strong>Final Theory Examination:</strong> November 28, 2026 | Forenoon Session</li>
-            </ul>
+            <h2>Menu Items, Prices & Live Availability</h2>
+            <table>
+                <tr><th>Item Name</th><th>Category</th><th>Price</th><th>Availability</th></tr>
+                <tr><td>Hyderabadi Dum Biryani</td><td>Biryani</td><td>₹260</td><td class="in-stock">Available</td></tr>
+                <tr><td>Paneer Butter Masala & Garlic Naan</td><td>North Indian</td><td>₹220</td><td class="in-stock">Available</td></tr>
+                <tr><td>Ghee Roast Masala Dosa</td><td>South Indian</td><td>₹110</td><td class="in-stock">Available</td></tr>
+                <tr><td>Double Cheese Margherita Pizza</td><td>Italian</td><td>₹299</td><td class="out-stock">Sold Out</td></tr>
+            </table>
         </div>
     </div>
 </body>
