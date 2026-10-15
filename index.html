@@ -2,62 +2,54 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>University Learning Management Portal</title>
+    <title>MedCare - Online Hospital Appointment Portal</title>
     <style>
-        body { font-family: Arial, sans-serif; margin: 0; background: #f4f6f9; color: #333; }
-        header { background: #1a365d; color: #fff; padding: 20px; text-align: center; }
+        body { font-family: Arial, sans-serif; margin: 0; background: #f0f9ff; color: #1e293b; }
+        header { background: #0369a1; color: #fff; padding: 20px; text-align: center; }
         .container { max-width: 1000px; margin: 20px auto; padding: 0 15px; display: grid; grid-template-columns: 1fr 1fr; gap: 15px; }
-        .card { background: #fff; padding: 15px; border-radius: 8px; box-shadow: 0 2px 5px rgba(0,0,0,0.1); }
-        h2 { color: #1a365d; margin-top: 0; border-bottom: 2px solid #e2e8f0; padding-bottom: 8px; font-size: 18px; }
-        ul { padding-left: 18px; margin: 0; }
-        li { margin-bottom: 6px; }
-        .badge { background: #2b6cb0; color: #fff; padding: 3px 8px; border-radius: 4px; font-size: 12px; }
+        .card { background: #fff; padding: 15px; border-radius: 8px; box-shadow: 0 2px 5px rgba(0,0,0,0.08); }
+        h2 { color: #0369a1; margin-top: 0; border-bottom: 2px solid #e0f2fe; padding-bottom: 8px; font-size: 18px; }
+        table { width: 100%; border-collapse: collapse; }
+        th, td { text-align: left; padding: 8px; border-bottom: 1px solid #e2e8f0; }
+        .slot { background: #dcfce7; color: #166534; padding: 3px 8px; border-radius: 4px; font-size: 12px; font-weight: bold; }
     </style>
 </head>
 <body>
     <header>
-        <h1>University Learning Management Portal</h1>
-        <p>Release Version: <span class="badge">v1.0 - Stable Release</span></p>
+        <h1>MedCare Hospital Appointment Portal</h1>
+        <p>24/7 Emergency & Multi-Specialty Outpatient Booking System</p>
     </header>
     <div class="container">
         <div class="card">
-            <h2>Course Information</h2>
+            <h2>Hospital Announcements</h2>
             <ul>
-                <li><strong>ISWE406P:</strong> Agile Development Process & DevOps (4 Credits)</li>
-                <li><strong>ISWE302L:</strong> Software Architecture & Design (3 Credits)</li>
-                <li><strong>ICSE204L:</strong> Cloud Computing & Microservices (4 Credits)</li>
+                <li>Free Cardiac & Diabetes Screening Camp this Sunday (8:00 AM – 1:00 PM).</li>
+                <li>New MRI & Digital Diagnostics Wing now open on Floor 2.</li>
+                <li>Tele-consultation slots available daily for follow-up patients.</li>
             </ul>
         </div>
         <div class="card">
-            <h2>Faculty Profiles</h2>
+            <h2>Medical Specializations</h2>
             <ul>
-                <li><strong>Dr. R. Subramanian</strong> – Professor, Dept. of Software Systems</li>
-                <li><strong>Prof. Anitha K.</strong> – Associate Professor, DevOps & Cloud Lab</li>
-                <li><strong>Dr. Vikram Nair</strong> – Assistant Professor, Distributed Computing</li>
-            </ul>
-        </div>
-        <div class="card">
-            <h2>Learning Resources</h2>
-            <ul>
-                <li>Module 1–4 Lecture Slides & CI/CD Lab Manuals (PDF)</li>
-                <li>Docker & Kubernetes Official Cheat Sheets</li>
-                <li>Recorded Lab Sessions & GitHub Starter Repositories</li>
-            </ul>
-        </div>
-        <div class="card">
-            <h2>Assignment Announcements</h2>
-            <ul>
-                <li><strong>Assessment VIII:</strong> CI/CD Pipeline & Automated Rollback – Due Today</li>
-                <li><strong>Project Milestone 2:</strong> Container Orchestration Review – Next Monday</li>
+                <li>Cardiology & Thoracic Care</li>
+                <li>Orthopedics & Joint Replacement</li>
+                <li>Neurology & Neurosurgery</li>
+                <li>Pediatrics & General Medicine</li>
             </ul>
         </div>
         <div class="card" style="grid-column: span 2;">
-            <h2>Examination Schedules</h2>
-            <ul>
-                <li><strong>Continuous Assessment Test (CAT-2):</strong> November 2, 2026 | 10:00 AM – 11:30 AM</li>
-                <li><strong>Lab Final Digital Assessment:</strong> Slot L49+L50</li>
-                <li><strong>Final Theory Examination:</strong> November 28, 2026 | Forenoon Session</li>
-            </ul>
+            <h2>Doctor Profiles, Consultation Timings & Available Slots</h2>
+            <table>
+                <tr><th>Doctor Name</th><th>Specialization</th><th>Consultation Timings</th><th>Available Slots</th></tr>
+                <tr><td>Dr. S. Raghavan (MD, DM)</td><td>Cardiology</td><td>09:00 AM – 01:00 PM</td><td><span class="slot">10:30 AM, 11:45 AM</span></td></tr>
+                <tr><td>Dr. Meera Krishnan (MS)</td><td>Orthopedics</td><td>02:00 PM – 06:00 PM</td><td><span class="slot">03:15 PM, 04:30 PM</span></td></tr>
+                <tr><td>Dr. Arvind Swamy (MD)</td><td>General Medicine</td><td>10:00 AM – 04:00 PM</td><td><span class="slot">11:00 AM, 02:30 PM</span></td></tr>
+            </table>
+        </div>
+        <div class="card" style="grid-column: span 2; background: #f8fafc; border: 1px solid #cbd5e1;">
+            <h2>Hospital Careers & Placement Opportunities</h2>
+            <p><strong>New Opening:</strong> Resident Medical Officer & Healthcare DevOps Engineer – Apply by Nov 15, 2026.</p>
+            <p><strong>Partner Company:</strong> Apollo HealthTech is recruiting Data Analysts from our campus.</p>
         </div>
     </div>
 </body>
